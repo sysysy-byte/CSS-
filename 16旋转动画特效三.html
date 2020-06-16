@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -100px;
+				margin-left: -100px;
+			}
+			p{
+				width: 160px;
+				height: 160px;
+				background: url(../image/1.jpg) center;
+				border: 20px solid rgba(255,255,255,0.5);
+				transform-origin: center top;
+				transition: 1s;
+				opacity: 1;
+			}
+			h1{
+				width: 200px;
+				height: 200px;
+				background: #333;
+				color: #fff;
+				text-align: center;
+				line-height: 200px;
+				position: absolute;
+				top: 0;
+				opacity: 0;
+				transition: 1s;
+				transform-origin: bottom center;
+				transform: rotateX(180deg);
+			}
+			div:hover p{
+				transform: rotateX(180deg);
+				opacity: 0;
+			}
+			div:hover h1{
+				opacity: 1;
+				transform: rotateX(0deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p></p>
+			<h1>文字</h1>
+		</div>
+	</body>
+</html>

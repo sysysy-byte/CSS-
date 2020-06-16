@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background: #666;
+			}
+			.photo{
+				width: 500px;
+				height: 344px;
+				background: #f00;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				margin-top: -172px;
+				margin-left: -250px;
+			}
+			.photo h1{
+				text-align: center;
+				color: white;
+				padding: 20px 0;
+			}
+			.photo .pic1{
+				width: 280px;
+				height: 196px;
+				border: 10px dotted #fff;
+				float: left;
+				margin: 0 20px;
+				background: #ff0;
+				overflow: hidden;
+			}
+			.photo .pic2{
+				width: 89px;
+				height: 196px;
+				border: 10px solid #fff;
+				float: left;
+				overflow-y: auto;
+			}
+			.img1{
+				width: 280px;
+				height: 196px;
+			}
+			.img2{
+				width: 73px;
+				height: 56px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="photo">
+			<h1>电子相册</h1>
+			<div class="pic1">
+				<img id="img1" class="img1" src="../image/1.jpg" >
+				<img id="img2" class="img1" src="../image/2.jpg" >
+				<img id="img3" class="img1" src="../image/3.jpg" >
+				<img id="img4" class="img1" src="../image/4.jpg" >
+				<img id="img5" class="img1" src="../image/5.jpg" >
+				<img id="img6" class="img1" src="../image/6.jpg" >
+			</div>
+			<div class="pic2">
+				<a href="#img1"><img class="img2" src="../image/1.jpg" ></a>
+				<a href="#img2"><img class="img2" src="../image/2.jpg" ></a>
+				<a href="#img3"><img class="img2" src="../image/3.jpg" ></a>
+				<a href="#img4"><img class="img2" src="../image/4.jpg" ></a>
+				<a href="#img5"><img class="img2" src="../image/5.jpg" ></a>
+				<a href="#img6"><img class="img2" src="../image/6.jpg" ></a>
+			</div>
+		</div>
+	</body>
+</html>
